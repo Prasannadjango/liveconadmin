@@ -1,0 +1,47 @@
+@import '../Styles/Bootstrap.css';
+
+
+@font-face {
+    font-family: 'webfont';
+    src: url(../Fonts/Poppins-Regular.otf),
+    url(../Fonts/Poppins-Regular.ttf),
+    url(../Fonts/Poppins-Regular.woff),
+    url(../Fonts/Poppins-Regular.woff2);
+
+}
+
+*{
+    margin: 0;
+    font-family:'webfont',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#067BBD;
+}
+
+.sidebar {
+    
+    background-color: var(--primary-color);
+    height: 100vh;
+    overflow: auto;
+   width:290px;
+   color: white;
+    padding: 20px;
+  }
+  
+ 
+  
+  .sidebar-menu a {
+    text-decoration: none;
+     font-size:17px;
+     
+  }
+
+  .sidebar-menulist:focus{
+    color: black;
+
+    border-radius:0 0 0 0;
+    background-color: white;
+     
+  }
