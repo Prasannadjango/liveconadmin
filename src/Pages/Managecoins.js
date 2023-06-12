@@ -1,7 +1,7 @@
 import React from "react";
 import { Table,Pagination } from "react-bootstrap";
 import Coins from "../Assests/Images/Coin.png";
-export default function Manageuser() {
+export default function Managecoins() {
   return (
     <>
       <div className="Manageuser-container rounded-lg shadow-md border-0 bg-white relative p-4">

@@ -22,7 +22,7 @@ export const Sidebar = () => {
         </li>
        
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="" className='flex align-items-center'>
+          <Link to="/Managecoins" className='flex align-items-center'>
           <ReactIcons.FaCoins className='text-3xl me-3' />
             <span>Manage Coins</span>
           </Link>
@@ -68,21 +68,21 @@ export const Sidebar = () => {
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
           <Link to="/Manageusers" className='flex align-items-center'>
-          <ReactIcons.FaUsers className='text-3xl me-3' />
+          <ReactIcons.FaWallet className='text-3xl me-3' />
             <span>My Accounts</span>
           </Link>
         </li>
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
           <Link to="/Manageusers" className='flex align-items-center'>
-          <ReactIcons.FaUsers className='text-3xl me-3' />
+          <ReactIcons.FaCog className='text-3xl me-3' />
             <span>App settings</span>
           </Link>
         </li>
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
           <Link to="/Manageusers" className='flex align-items-center'>
-          <ReactIcons.FaUsers className='text-3xl me-3' />
+          <ReactIcons.FaCaretSquareLeft className='text-3xl me-3' />
             <span>Logout</span>
           </Link>
         </li>

@@ -1,47 +1,80 @@
-@import '../Styles/Bootstrap.css';
-
+@import "../Styles/Bootstrap.css";
 
 @font-face {
-    font-family: 'webfont';
-    src: url(../Fonts/Poppins-Regular.otf),
-    url(../Fonts/Poppins-Regular.ttf),
-    url(../Fonts/Poppins-Regular.woff),
-    url(../Fonts/Poppins-Regular.woff2);
-
+  font-family: "webfont";
+  src: url(../Fonts/Poppins-Regular.otf), url(../Fonts/Poppins-Regular.ttf),
+    url(../Fonts/Poppins-Regular.woff), url(../Fonts/Poppins-Regular.woff2);
 }
 
-*{
-    margin: 0;
-    font-family:'webfont',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  font-family: "webfont", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --primary-color:#067BBD;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+:root {
+  --primary-color: #067bbd;
 }
 
 .sidebar {
-    
-    background-color: var(--primary-color);
-    height: 100vh;
-    overflow: auto;
-   width:290px;
-   color: white;
-    padding: 20px;
-  }
-  
- 
-  
-  .sidebar-menu a {
-    text-decoration: none;
-     font-size:17px;
-     
-  }
+  background-color: var(--primary-color);
+  height: 100vh;
+  overflow: auto;
+  width: 320px;
+  color: white;
+  padding: 20px;
+}
 
-  .sidebar-menulist:focus{
-    color: black;
+.sidebar-menu a {
+  text-decoration: none;
+  font-size: 17px;
+}
 
-    border-radius:0 0 0 0;
-    background-color: white;
-     
-  }
+.sidebar-menulist:focus {
+  color: black;
+
+  border-radius: 0 0 0 0;
+  background-color: white;
+}
+.Icons-container {
+  width: 53px;
+  height: 53px;
+  background-image: linear-gradient(
+    270.3deg,
+    rgba(84, 212, 228, 1) 0.2%,
+    rgba(68, 36, 164, 1) 100%
+  );
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 12px;
+  top: 14px;
+}
+.bdw-0{
+  border-width: 0 !important;
+}
+.tb-container{
+  height: 330px;
+  overflow: scroll;
+}
+.input-icon{
+  background-size: 28px;
+  background-position-x: 9px;
+  background-position-y: center;
+  background-position: left 10px;
+  background-repeat: no-repeat;
+  background-image: url(../Images/Search.png);
+}
