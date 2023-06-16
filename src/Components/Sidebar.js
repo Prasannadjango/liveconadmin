@@ -30,7 +30,7 @@ export const Sidebar = () => {
 
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="/Manageusers" className='flex align-items-center'>
+          <Link to="/ManageGifts" className='flex align-items-center'>
           <ReactIcons.FaGift className='text-3xl me-3' />
             <span>Manage Gifts</span>
           </Link>

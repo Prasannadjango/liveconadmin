@@ -7,6 +7,8 @@ import { Dashboard } from "./Pages/Dashboard";
 import Manageuser from "./Pages/Manageuser";
 import Loader from "./Components/Loader";
 import Managecoins from "./Pages/Managecoins";
+import Managegifts from "./Pages/Managegifts";
+import Addgifts from "./Pages/Addgifts";
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/Manageusers" element={<Manageuser/>} />
               <Route path="/Managecoins" element={<Managecoins/>} />
+              <Route path='/ManageGifts' element={<Managegifts/>}/>
+              <Route path='/AddGifts' element={<Addgifts/>}/>
             </Routes>
           </div>
         </div>

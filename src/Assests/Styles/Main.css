@@ -63,18 +63,21 @@ h6 {
   right: 12px;
   top: 14px;
 }
-.bdw-0{
+.bdw-0 {
   border-width: 0 !important;
 }
-.tb-container{
+.tb-container {
   height: 330px;
   overflow: scroll;
 }
-.input-icon{
+.input-icon {
   background-size: 28px;
   background-position-x: 9px;
   background-position-y: center;
-  background-position: left 10px;
+
   background-repeat: no-repeat;
   background-image: url(../Images/Search.png);
+}
+.Coin-input {
+  width: 127px;
 }
