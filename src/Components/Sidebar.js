@@ -38,7 +38,7 @@ export const Sidebar = () => {
 
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="/Manageusers" className='flex align-items-center'>
+          <Link to="/Managebadges" className='flex align-items-center'>
           <ReactIconbs.BsFillAwardFill className='text-3xl me-3' />
             <span>Manage Badges</span>
           </Link>
@@ -46,21 +46,21 @@ export const Sidebar = () => {
 
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="/Manageusers" className='flex align-items-center'>
+          <Link to="/Managehashtags" className='flex align-items-center'>
           <ReactIcons.FaHashtag className='text-3xl me-3' />
             <span>Manage Hashtags</span>
           </Link>
         </li>
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="/Manageusers" className='flex align-items-center'>
+          <Link to="/Managegroups" className='flex align-items-center'>
           <ReactIcons.FaUsers className='text-3xl me-3' />
             <span>Manage Groups</span>
           </Link>
         </li>
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="/Manageusers" className='flex align-items-center'>
+          <Link to="/Notification" className='flex align-items-center'>
           <ReactIcons.FaBell className='text-3xl me-3' />
             <span>Notifications</span>
           </Link>

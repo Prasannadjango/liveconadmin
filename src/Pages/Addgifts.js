@@ -1,8 +1,5 @@
 import React from "react";
-import { Table, Pagination } from "react-bootstrap";
-import Coins from "../Assests/Images/Coin.png";
-import Sticker1 from "../Assests/Images/Rose.png";
-import Sticker2 from "../Assests/Images/Rosette.png";
+
 export default function Addgifts() {
   return (
     <>
