@@ -16,6 +16,7 @@ import Addbadges from "./Pages/Addbadges";
 import Managegroups from "./Pages/Managegroups";
 import Notifications from "./Pages/Notifications";
 import Account from "./Pages/Account";
+import Appsettings from "./Pages/Appsettings";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
               <Route path="/Addhashtags" element={<Addhashtags />} />
               <Route path="/Notification" element={<Notifications/>} />
               <Route path="/Account" element={<Account/>} />
-              
+              <Route path="/Appsettings" element={<Appsettings/>}/>
             </Routes>
           </div>
         </div>

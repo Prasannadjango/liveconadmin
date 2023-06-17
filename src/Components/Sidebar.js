@@ -63,6 +63,7 @@ export const Sidebar = () => {
           <Link to="/Notification" className='flex align-items-center'>
           <ReactIcons.FaBell className='text-3xl me-3' />
             <span>Notifications</span>
+            
           </Link>
         </li>
 
@@ -74,7 +75,7 @@ export const Sidebar = () => {
         </li>
 
         <li className='mb-4 p-1 sidebar-menulist'   tabIndex="0">
-          <Link to="/Manageusers" className='flex align-items-center'>
+          <Link to="/Appsettings" className='flex align-items-center'>
           <ReactIcons.FaCog className='text-3xl me-3' />
             <span>App settings</span>
           </Link>

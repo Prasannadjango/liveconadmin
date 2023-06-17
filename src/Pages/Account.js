@@ -1,8 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import { Table, Pagination } from "react-bootstrap";
 
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 export default function Account() {
+  const [startDate, setStartDate] = useState(new Date("2014/02/08"));
+  const [endDate, setEndDate] = useState(new Date("2014/02/10"));
   return (
     <>
       <div className="Manageuser-container rounded-lg shadow-md border-0 bg-white relative p-4">
@@ -13,6 +18,27 @@ export default function Account() {
             className="input-icon block rounded-md border-1 border-secondary py-2.5  pl-12 pr-20 text-gray-900 "
             placeholder="Search for Entry...."
           />
+          <div className='flex'>
+          <DatePicker
+          showIcon
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+        selectsStart
+        startDate={startDate}
+        endDate={endDate}
+        className='Datepicker-input me-4 rounded-md border-1 border-secondary py-2.5  text-gray-900'
+      />
+      <DatePicker
+        showIcon
+        selected={endDate}
+        onChange={(date) => setEndDate(date)}
+        selectsEnd
+        startDate={startDate}
+        endDate={endDate}
+        minDate={startDate}
+        className='Datepicker-input rounded-md border-1 border-secondary py-2.5   text-gray-900'
+      />
+          </div>
         </div>
 
         <div class=" rounded-lg  shadow-md tb-container">
@@ -45,23 +71,7 @@ export default function Account() {
               
                 <td className=" px-6 py-4 font-normal text-center  text-gray-900">
                   <div class="flex justify-content-center gap-4">
-                    <a x-data="{ tooltip: 'Edite' }" href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-6 w-6 "
-                        x-tooltip="tooltip"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
-                        />
-                      </svg>
-                    </a>
+                 
                     <a x-data="{ tooltip: 'Delete' }" href="#">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
