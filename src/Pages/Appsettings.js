@@ -25,8 +25,10 @@ export default function Appsettings() {
       <div className="Manageuser-container rounded-lg shadow-md border-0 bg-white relative p-4">
         <h4 className="fw-bold pb-4">Manage Payment gateway</h4>
         <form>
-        <label>Secret key</label>
+     <div className='mb-4'>
+     <label>Secret key</label>
           <input type="text" className="form-control" />
+     </div>
 
           <label>Publishible key</label>
           <input type="text" className="form-control" />

@@ -2,13 +2,38 @@ import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import * as ReactIcons from "react-icons/fa";
 import * as ReactIconbs from "react-icons/bs";
-import { Line } from "react-chartjs-2";
+import { Line } from 'react-chartjs-2';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
+
 import { Chart, registerables } from 'chart.js'; 
 // import 'chartjs-adapter-moment'; // or another adapter to avoid moment
 Chart.register(...registerables)
 
 export const Dashboard = () => {
- 
+
+  const chartData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    datasets: [
+      {
+        label: 'My Line Chart',
+        data: [65, 59, 80, 81, 56, 55],
+        fill: false,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.1,
+      },
+    ],
+  };
+  
+  const chartOptions = {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  };
+  
   return (
     <>
       <div className="py-4">
@@ -69,8 +94,13 @@ export const Dashboard = () => {
           </Col>
         </Row>
 
-        <Row xl={2} xs={1} className="g-4">
-          
+        <Row xl={2} xs={1} className="g-4 mt-4">
+          <Col>
+          <Card className="p-4 w-100 position-relative rounded-lg shadow-md border-0">
+          <Line data={chartData} options={chartOptions} />
+          </Card>
+         
+          </Col>
         </Row>
       </div>
     </>
